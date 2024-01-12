@@ -1610,7 +1610,7 @@ html.has-scroll-dragging {
   --white: rgb(242, 242, 242);
   --grey: rgba(255, 255, 255, 0.3);
   --dark-grey: rgba(255, 255, 255, 0.8);
-  --bg-img: rgba(0,0,0, 0.94) 60%,rgba(0,0,0, 1);
+  --bg-img: rgba(0,0,0, 0.95) 60%,rgba(0,0,0, 1);
   --cursor-color: rgba(255, 255, 255, 0.15);
   --roobert-regular: 'Roobert-Regular';
   --roobert-bold: 'Roobert-Bold';
