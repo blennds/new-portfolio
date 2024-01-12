@@ -1573,8 +1573,8 @@
   
   @font-face {
     font-family: 'Roobert-Regular';
-    src: url("../../fonts/Roobert-Regular.eot");
-    src: url("../../fonts/Roobert-Regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/Roobert-Regular.woff2") format("woff2"), url("../../fonts/Roobert-Regular.woff") format("woff"), url("../../fonts/Roobert-Regular.ttf") format("truetype");
+    src: url("../fonts/Roobert-Regular.eot");
+    src: url("../fonts/Roobert-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Roobert-Regular.woff2") format("woff2"), url("../fonts/Roobert-Regular.woff") format("woff"), url("../fonts/Roobert-Regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -1582,8 +1582,8 @@
   
   @font-face {
     font-family: 'Roobert-Medium';
-    src: url("../../fonts/Roobert-Medium.eot");
-    src: url("../../fonts/Roobert-Medium.eot?#iefix") format("embedded-opentype"), url("../../fonts/Roobert-Medium.woff2") format("woff2"), url("../../fonts/Roobert-Medium.woff") format("woff"), url("../../fonts/Roobert-Medium.ttf") format("truetype");
+    src: url("../fonts/Roobert-Medium.eot");
+    src: url("../fonts/Roobert-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Roobert-Medium.woff2") format("woff2"), url("../fonts/Roobert-Medium.woff") format("woff"), url("../fonts/Roobert-Medium.ttf") format("truetype");
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -1591,8 +1591,8 @@
   
   @font-face {
     font-family: 'Roobert-SemiBold';
-    src: url("../../fonts/Roobert-SemiBold.eot");
-    src: url("../../fonts/Roobert-SemiBold.eot?#iefix") format("embedded-opentype"), url("../../fonts/Roobert-SemiBold.woff2") format("woff2"), url("../../fonts/Roobert-SemiBold.woff") format("woff"), url("../../fonts/Roobert-SemiBold.ttf") format("truetype");
+    src: url("../fonts/Roobert-SemiBold.eot");
+    src: url("../fonts/Roobert-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Roobert-SemiBold.woff2") format("woff2"), url("../fonts/Roobert-SemiBold.woff") format("woff"), url("../fonts/Roobert-SemiBold.ttf") format("truetype");
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -1600,8 +1600,8 @@
   
   @font-face {
     font-family: 'Robert-thin';
-    src: url("../../fonts/RobertSans-Thin.eot");
-    src: url("../../fonts/RobertSans-Thin.eot?#iefix") format("embedded-opentype"), url("../../fonts/RobertSans-Thin.woff2") format("woff2"), url("../../fonts/RobertSans-Thin.woff") format("woff"), url("../../fonts/RobertSans-Thin.ttf") format("truetype");
+    src: url("../fonts/RobertSans-Thin.eot");
+    src: url("../fonts/RobertSans-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/RobertSans-Thin.woff2") format("woff2"), url("../fonts/RobertSans-Thin.woff") format("woff"), url("../fonts/RobertSans-Thin.ttf") format("truetype");
     font-weight: 100;
     font-style: normal;
     font-display: swap;
@@ -1609,8 +1609,8 @@
   
   @font-face {
     font-family: 'Roobert-Bold';
-    src: url("../../fonts/Roobert-Bold.eot");
-    src: url("../../fonts/Roobert-Bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/Roobert-Bold.woff2") format("woff2"), url("../../fonts/Roobert-Bold.woff") format("woff"), url("../../fonts/Roobert-Bold.ttf") format("truetype");
+    src: url("../fonts/Roobert-Bold.eot");
+    src: url("../fonts/Roobert-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Roobert-Bold.woff2") format("woff2"), url("../fonts/Roobert-Bold.woff") format("woff"), url("../fonts/Roobert-Bold.ttf") format("truetype");
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -1618,8 +1618,8 @@
   
   @font-face {
     font-family: 'icomoon';
-    src: url("../../fonts/icomoon.eot?umi4ie");
-    src: url("../../fonts/icomoon.eot?umi4ie#iefix") format("embedded-opentype"), url("../../fonts/icomoon.ttf?umi4ie") format("truetype"), url("../../fonts/icomoon.woff?umi4ie") format("woff"), url("../../fonts/icomoon.svg?umi4ie#icomoon") format("svg");
+    src: url("../fonts/icomoon.eot?umi4ie");
+    src: url("../fonts/icomoon.eot?umi4ie#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?umi4ie") format("truetype"), url("../fonts/icomoon.woff?umi4ie") format("woff"), url("../fonts/icomoon.svg?umi4ie#icomoon") format("svg");
     font-weight: normal;
     font-style: normal;
     font-display: block;
@@ -2319,8 +2319,8 @@
     padding-bottom: 200px;
     min-height: 90vh;
     width: 100%;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--bg-img))), url("../../img/pics/hero.avif");
-    background-image: linear-gradient(var(--bg-img)), url("../../img/pics/hero.avif");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--bg-img))), url("../img/pics/hero.avif");
+    background-image: linear-gradient(var(--bg-img)), url("../img/pics/hero.avif");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
