@@ -1612,6 +1612,8 @@ html.has-scroll-dragging {
   --dark-grey: rgba(255, 255, 255, 0.8);
   --bg-img: rgba(0,0,0, 0.96) 60%,rgba(0,0,0, 1);
   --cursor-color: rgba(255, 255, 255, 0.15);
+  --input-bg-color: var(--black-light);
+  --yellow: #fdb813;
   --roobert-regular: 'Roobert-Regular';
   --roobert-bold: 'Roobert-Bold';
   --roobert-semibold: 'Roobert-SemiBold';
@@ -1658,7 +1660,7 @@ html.has-scroll-dragging {
   --mobile-height: 100vh;
 }
 
-:root .dark-theme {
+:root .light-theme {
   --white: #000000;
   --black-light: #191b1d;
   --black: rgb(242, 242, 242);
@@ -1666,6 +1668,8 @@ html.has-scroll-dragging {
   --dark-grey: #000000;
   --bg-img: rgba(242,242,242, 0.97) 60%,rgba(242,242,242, 1);
   --cursor-color: rgba(0, 0, 0, 0.15);
+  --input-bg-color: rgba(0, 0, 0, 0.08);
+  --yellow: #fdb813;
 }
 
 @font-face {
@@ -2298,8 +2302,8 @@ p {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   position: fixed;
   top: 0;
   z-index: 5;
@@ -2382,34 +2386,116 @@ p {
   color: var(--white);
 }
 
-.header #icon {
+.wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrapper .switch {
+  width: 28px;
+  height: 50px;
+  padding-top: 2px;
+  background-color: var(--input-bg-color);
+  border-radius: 40px;
   cursor: pointer;
-  font-size: 25px !important;
+  outline: none;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.wrapper .toggle-button {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.wrapper .toggle {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  margin: 6px;
+  background-color: var(--yellow);
+  border-radius: 50%;
+}
+
+.wrapper .moon-mask {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  margin: -55px 0 0 5px;
+  background-color: var(--input-bg-color);
+  border-radius: 50%;
+}
+
+.wrapper .circles-wrapper {
   position: relative;
 }
 
-@-webkit-keyframes rotate {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
+.wrapper .circles-wrapper .circle {
+  position: absolute;
+  width: 2px;
+  height: 5px;
+  background-color: var(--white);
+  border-radius: 10px;
 }
 
-@keyframes rotate {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
+.wrapper .circles-wrapper .circle:first-child {
+  margin: -2px 0 0 12px;
+}
 
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
+.wrapper .circles-wrapper .circle:nth-child(2) {
+  margin: -5px 0 0 22px;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.wrapper .circles-wrapper .circle:nth-child(3) {
+  margin: -15px 0 0 25px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.wrapper .circles-wrapper .circle:nth-child(4) {
+  margin: -25px 0 0 22px;
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+}
+
+.wrapper .circles-wrapper .circle:nth-child(5) {
+  margin: -29px 0 0 12px;
+}
+
+.wrapper .circles-wrapper .circle:nth-child(6) {
+  margin: -26px 0 0 2px;
+  -webkit-transform: rotate(315deg);
+          transform: rotate(315deg);
+}
+
+.wrapper .circles-wrapper .circle:nth-child(7) {
+  margin: -5px 0 0 2px;
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+}
+
+.wrapper .circles-wrapper .circle:nth-child(8) {
+  margin: -16px 0 0 -2px;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.text p {
+  margin-left: 5px;
+  font-size: 22px;
+  line-height: 1.1;
+  font-weight: 700;
+  color: var(--white);
+  font-family: var(--roobert-regular);
 }
 
 .hero--section {
@@ -2781,14 +2867,14 @@ p {
   width: calc(50% - 7px);
   outline: none;
   border: none;
-  background-color: var(--black-light);
+  background: var(--input-bg-color);
   height: 40px;
   padding: 15px;
   border-radius: 5px;
   margin-bottom: 15px;
   font-family: var(--roobert-regular);
   font-size: 14px;
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--white);
 }
 
 .contact form textarea.subject,
@@ -2800,21 +2886,21 @@ p {
 .contact form input::-webkit-input-placeholder {
   font-family: var(--roobert-regular);
   font-size: 14px;
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--grey);
 }
 
 .contact form textarea::-ms-input-placeholder,
 .contact form input::-ms-input-placeholder {
   font-family: var(--roobert-regular);
   font-size: 14px;
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--grey);
 }
 
 .contact form textarea::placeholder,
 .contact form input::placeholder {
   font-family: var(--roobert-regular);
   font-size: 14px;
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--grey);
 }
 
 .contact form textarea {
@@ -2823,11 +2909,7 @@ p {
   height: 100px;
 }
 
-.contact form .button-parent {
-  width: 15%;
-}
-
-.contact form .button-parent button {
+.contact form button {
   position: relative;
   border: none;
   outline: none;
@@ -3139,11 +3221,15 @@ footer .footer-container .copyrights {
     display: block;
   }
 
-  .header #icon {
+  .header {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .wrapper {
     position: absolute;
     right: 50px;
-    top: 35px;
-    margin-top: 0;
+    top: 23px;
   }
 
   .hero--section h1 {
@@ -3294,11 +3380,6 @@ footer .footer-container .copyrights {
   }
 }
 
-@media (min-width: 1800px) {
-  .swiper {
-    height: 1000px;
-  }
-}
 
 @media only screen and (max-width: 768px) {
   .flex.wrap .cll-col {
@@ -3342,13 +3423,6 @@ footer .footer-container .copyrights {
     color: var(--dark-grey);
   }
 
-  .header #icon:hover {
-    -webkit-animation: rotate 1s ease-in-out;
-            animation: rotate 1s ease-in-out;
-    -webkit-transform-origin: center center;
-            transform-origin: center center;
-  }
-
   .main--services .service--card:hover.service--card {
     opacity: 1;
   }
@@ -3361,7 +3435,7 @@ footer .footer-container .copyrights {
     color: var(--white);
   }
 
-  .contact form .button-parent button:hover {
+  .contact form button:hover {
     opacity: 0.8;
   }
 
